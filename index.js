@@ -1,4 +1,4 @@
-var cccf  = require('cccf')
+var zsf   = require('@zombiec0rn/zombie-service-format')
 var clone = require('clone')
 
 var scaleUp = function(config) {
@@ -28,9 +28,9 @@ var scaleDown = function(config) {
 
 module.exports = {
 	up : function(config) {
-		return scaleUp(cccf.validate((config instanceof Array) ? config : [config]))
+		return scaleUp(zsf.validate((config instanceof Array) ? config : [config]))
 	},
 	down : function(config) {
-		return scaleDown(cccf.validate((config instanceof Array) ? config : [config]))
+		return scaleDown(zsf.validate((config instanceof Array) ? config : [config]))
 	}
 }

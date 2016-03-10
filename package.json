@@ -14,7 +14,7 @@
     "url": "https://github.com/zombiec0rn/zombie-service-scale.git"
   },
   "keywords": [
-    "cccf"
+    "zombie"
   ],
   "author": "Asbjorn Enge <asbjorn@hanafjedle.net>",
   "license": "BSD",
@@ -23,5 +23,7 @@
   },
   "homepage": "https://github.com/zombiec0rn/zombie-service-scale",
   "dependencies": {
+    "@zombiec0rn/zombie-service-format": "^1.0.0",
+    "clone": "^1.0.2"
   }
 }

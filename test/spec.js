@@ -1,24 +1,24 @@
 var assert  = require('assert')
-var clone   = require('clone')
-var example = require('cccf/example.json')
-var cs      = require('../index')
+var zsf     = require('@zombiec0rn/zombie-service-format')
+var scale   = require('../index')
 
-var config   = clone(example)
-config.scale = 10
+var service = zsf.random(1, {
+  scale: 10
+})[0]
 
-describe('cccf-scale', function() {
+describe('zombie scale', function() {
 
 	it('can scale up', function() {
-		var upscaled = cs.up(config)
+		var upscaled = scale.up(service)
 		assert(upscaled != null)
 		assert(upscaled.length == 10)
 	})
 
 	it('can scale down', function() {
-		var up = cs.up(config)
+		var up = scale.up(service)
 		assert(up != null)
 		assert(up.length == 10)
-		var down = cs.down(up)
+		var down = scale.down(up)
 		assert(down != null)
 		assert(down.length == 1)
 	})
