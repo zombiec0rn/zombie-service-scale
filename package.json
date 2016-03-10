@@ -1,0 +1,27 @@
+{
+  "name": "@zombiec0rn/zombie-service-scale",
+  "version": "1.0.0",
+  "description": "Zombie Service (format) scaler",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R nyan -w --check-leaks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zombiec0rn/zombie-service-scale.git"
+  },
+  "keywords": [
+    "cccf"
+  ],
+  "author": "Asbjorn Enge <asbjorn@hanafjedle.net>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/zombiec0rn/zombie-service-scale/issues"
+  },
+  "homepage": "https://github.com/zombiec0rn/zombie-service-scale",
+  "dependencies": {
+  }
+}
